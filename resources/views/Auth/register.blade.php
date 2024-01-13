@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1 class="mb-1 text-dark fs-3 text-center">
+    <h1 class="mb-1 mt-4 text-dark fs-3 text-center">
         <bold>
             <strong class="mb-2 text-dark fs-3 text-center">
                 REGISTRATION
@@ -33,7 +33,7 @@
             <div class="mb-3 form-check">
                 <p class="mt-3 text-start">Sudah memiliki akun ?</p>
                 <p class="mt-3 text-start">
-                    <a href="#" class="text-start text-primary">Masuk</a>
+                    <a href="{{ route('login') }}" class="text-start text-primary">Masuk</a>
                 </p>
             </div>
             <button type="submit" class="btn btn-primary bg-primary text-light" style="align-items: center; margin-left:35%;">Sign Up</button>

@@ -28,7 +28,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
-        
+
     }
 
     /**
@@ -61,5 +61,10 @@ class ProductController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function loginpage()
+    {
+        return view ('auth.login');
     }
 }
