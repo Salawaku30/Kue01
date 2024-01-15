@@ -29,4 +29,26 @@ Route::get('/register', function () {
 })->name('register');
 
 
+//Admin Page
+Route::get('/admin', function () {
+    $pageTitle = "Admin";
+    return view('admin.index', compact('pageTitle'));
+})->name('index');
+
+Route::get('/orders', function () {
+    $pageTitle = "Orders";
+    return view('admin.orders', compact('pageTitle'));
+})->name('orders');
+
+Route::get('/product', function () {
+    $pageTitle = "Products";
+    return view('admin.product', compact('pageTitle'));
+})->name('product');
+
+Route::get('/feedback', function () {
+    $pageTitle = "Feedback";
+    return view('admin.feedback', compact('pageTitle'));
+})->name('feedback');
+
+
 Route::resource('products', ProductController::class);

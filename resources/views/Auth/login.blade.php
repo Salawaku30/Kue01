@@ -29,6 +29,7 @@
                 <div class="ms-auto p-2"><a href="{{ route('register') }}" class="text-end">Daftar</a></div>
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="{{ route('index') }}">Admin Page</a>
           </form>
     </div>
 
